@@ -1,0 +1,49 @@
+TARGET
+Rmin: 115
+Rmax: 150
+Gmin: 140
+Gmax: 200
+Bmin: 100
+Bmax: 140
+
+PINK
+Rmin: 230, 208 
+Rmax: 255, 245
+Gmin: 125, 115
+Gmax: 200, 130
+Bmin: 165, 135
+Bmax: 255, 155
+
+PURPLE
+Rmin: 135, 180, 
+Rmax: 180, 205, 
+Gmin: 130, 185
+Gmax: 185, 205
+Bmin: 150, 180
+Bmax: 190, 215
+
+ORANGE
+Rmin: 250
+Rmax: 255
+Gmin: 220
+Gmax: 245
+Bmin: 185
+Bmax: 205
+
+SONAR
+go straight if(midReading > 25.4)	//10in away from wall
+turn left if( (midReading <= 25.4) && (leftReading > 49.96) && (rightReading <= 49.96) ) 
+turn right if( (midReading <= 25.4 ) && (rightReading > 49.96) ) 
+turn around if( (midReading <= 25.4) && (leftReading <= 49.96) && (rightReading <= 49.96) ) 
+if reading>100, reading=25 //turn
+
+COMPASS
+N: 190-210
+S: 320-335
+E: 55-75
+W: 270-280
+
+IR SENSOR
+tile (whiteish): 1.8522, 2.5431, 1.7, 2.01, 1.84
+door (orange): 1.77, 1.84, 1.81
+pad (purple): 1.58, 1.8032, 1.862

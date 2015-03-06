@@ -1,0 +1,16 @@
+#include <iostream>
+#include <nemo/Nemo.H>
+
+int main()
+{
+	std::cout << "Hello, World!" << std::endl;
+	usleep(1000000);          // Wait for 1 seconds
+	Nemo::setMotor(0, 100);  // Set Motor 0 to full speed forwards
+	usleep(500000);          // Wait for .5 seconds
+	Nemo::setMotor(0, 0);    // Stop Motor 0
+	usleep(500000);          // Wait for .5 seconds
+	Nemo::setMotor(0, -100); // Set Motor 0 to full speed reverse
+	std::cout << "Goodbye, World!" << std::endl;
+
+	return 0;
+}
