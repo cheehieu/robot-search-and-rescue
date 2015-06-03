@@ -21,9 +21,9 @@ The robot is primarily "bi-pedal", in that it utilizes two DC-motor-powered whee
 ## Software
 Milestones:
 
-#Find and bump the pink robot
-#Search and rescue green beanbag victims
-#Return to safe areas designated by pink rectangles
+* ***Find and bump the pink robot***
+* ***Search and rescue green beanbag victims***
+* ***Return to safe areas designated by pink rectangles***
 
 In order to successfully meet the project milestones, several software components were combined. My major contribution for this project was implementing the state machine and controlling the overall behavior of our robot. I pretty much had a hand in every part of the code for interfacing and testing/debugging all of our sensors. These include an IR sensor for wall following, sonar for moving forward and updating the particle filter, compass for semi-accurate turning and maintaining a forward heading, and the camera for “object recognition.” I also wrote the state machine that allowed the robot to find targets and plan paths to a particular destination.
 
