@@ -48,6 +48,28 @@ An example of the course map is shown below. The white lines represent walls. Th
 
 <img src="http://niftyhedgehog.com/robot-search-and-rescue/images/map.png">
 
+The final program was quite complex, with over 10,000 lines of code. The general state machine from /sw/final/test/Main.C is as follows:
+
+```
+while(1)
+{
+	switch(state) {
+		case 0:		//search for robot, navigate map randomly
+		case 1:		//found robot
+		case 2:		//very close to robot
+		case 3:		//parse map.txt, initialize maps and particle filter
+		case 4:		//escape from orange (go to orange and then +1)
+		case 5: 	//look for green target (closest unvisited)
+		case 6: 	//go to closest available purple dock
+		case 7: 	//found purple, release green on dock
+		case 8:		//play fight song
+		case 10:	//found green
+		case 11:	//grab green
+		case 12:	//bring green to dock
+		case 13:	//release green
+}	
+```
+
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rGxbRecGTwc" frameborder="0" allowfullscreen></iframe>
 
