@@ -24,6 +24,9 @@ The robot is primarily "bi-pedal", in that it utilizes two DC-motor-powered whee
 * Compass - mounted above the robot for directional navigation (N, S, E, W)
 * Camera - mounted in the front for object recognition and navigation
 
+The "brains" of the robot is a custom-built [NEMO Board](http://r-c-v.com/projects.html#project_nemo), which utilizes a 600Mhz Gumstix Overo and ATmega 1280 microcontroller. It was built by the multi-talented engineer, Randolph Voorhies.
+
+
 ## Software
 Project Milestones:
 
